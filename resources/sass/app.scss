@@ -1,8 +1,18 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Variables
-@import 'variables';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "settings/colors";
+@import "settings/dimensions";
+
+@import "base/core";
+@import "base/grid";
+
+@import "utils/allign";
+@import "utils/visibility";
+
+@import "components/form";
+@import "components/nav";

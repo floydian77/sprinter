@@ -1,0 +1,22 @@
+#app {
+    display: grid;
+    //grid-gap: 5px;
+    grid-template-rows: $nav-height $nav-height 1fr;
+    height: 100%;
+}
+
+.header {
+    background-color: $black;
+}
+
+.subheader {
+    background-color: $cod-gray;
+}
+
+.main {
+    height: 100%;
+    overflow-y: auto;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(16, 250px);
+}

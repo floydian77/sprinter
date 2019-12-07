@@ -1,0 +1,35 @@
+nav {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+
+        a {
+            display: block;
+            background-color: $charade;
+            border-radius: calc(2 * #{$nav-button-margin});
+            color: $dim-gray;
+            font-weight: bold;
+            text-align: center;
+            line-height: calc(#{$nav-height} - (2 * #{$nav-button-margin}));
+            margin: $nav-button-margin;
+            padding-left: calc(2 * #{$nav-button-margin});
+            padding-right: calc(2 * #{$nav-button-margin});
+            text-decoration: none;
+
+            &:hover:not(.active) {
+                background-color: $oxford-blue;
+            }
+        }
+    }
+
+    .active {
+        background-color: $gun-powder;
+        color: $cod-gray;
+    }
+}
