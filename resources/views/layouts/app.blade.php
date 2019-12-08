@@ -28,12 +28,13 @@
 </form>
 
 <script src="{{ mix('js/app.js') }}"></script>
+@yield('scripts')
 <script>
     $('.logout').on('click', (e) => {
         e.preventDefault();
         $('#logout-form').submit();
     });
 </script>
-</body>
 
+</body>
 </html>
